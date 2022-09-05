@@ -1,0 +1,18 @@
+{
+"name": "proper-pixel-tokens",
+    "title": "Proper Pixel Tokens",
+    "description": "A module to change how Foundry VTT handles token resize.",
+    "authors": [
+      {
+      "name": "wickedRobot#2069"
+      }
+      ],
+    "version": "1.0.0",
+    "scripts": [
+        "scripts/pixel-token.js"
+    ],
+    "compatibility": {
+      "minimum": "9",
+      "verified": "9"
+    }
+  }
