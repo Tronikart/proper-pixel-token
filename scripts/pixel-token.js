@@ -1,4 +1,4 @@
-console.log("Loading Proper Pixel Tokens");
+console.log("Loading Proper Pixels");
 
 Hooks.on("canvasReady", async () => {
     for (let token of canvas.tokens.placeables) {
@@ -9,16 +9,10 @@ Hooks.on("canvasReady", async () => {
 })
 
 Hooks.on("createToken",  async (token, options, user) => {    
+    // if this await doesn't exist, texture will return undefined
+    // if you know a less-hacky way to do this, please feel free to send a PR
     await new Promise(resolve => setTimeout(resolve, 100));
-    var token = token.object;
-    console.log("token");
-    console.log(token);
-    var texture = token.texture;
-    console.log("texture");
-    console.log(texture);
-    var baseTexture = texture.baseTexture;
-    console.log("token");
-    console.log(token);
+    var baseTexture = token.object.texture.baseTexture;
     baseTexture.setStyle(0,0);
     baseTexture.update();
 })
