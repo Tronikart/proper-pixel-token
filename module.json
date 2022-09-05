@@ -14,5 +14,7 @@
     "compatibility": {
       "minimum": "9",
       "verified": "9"
-    }
+    },
+    "download": "https://github.com/Tronikart/proper-pixel-token/releases/latest/download/module.zip",
+    "manifest": "https://github.com/Tronikart/proper-pixel-token/releases/latest/download/module.json"
   }
