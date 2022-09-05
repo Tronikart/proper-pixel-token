@@ -18,3 +18,7 @@ The animated token is a webm file
 This mod can be installed as any regular mod through the mod manager
 
 Use this manifest url on the module manager window: https://github.com/Tronikart/proper-pixels/releases/download/1.0.1/module.json
+
+### TODO
+
+* Add configuration to decide what the mod should affect (Tiles and/or Tokens)
