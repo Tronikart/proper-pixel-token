@@ -11,6 +11,8 @@ Theres currently no configuration since I didn't think it'd need and didn't want
 
 ### Proper Pixels behavior
 ![Proper Pixels Behavior](/readme-media/ProperPixels.gif)
+This one looks way better but gif compression is doing its thing
+
 The animated token is a webm file
 
 # Manual Instalation
