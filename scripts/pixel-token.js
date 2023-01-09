@@ -6,7 +6,7 @@ Hooks.on("canvasReady", () => {
         token.texture.baseTexture.update();
     }
     // there has to be an easier way to get tiles, right?
-    for (let tile of canvas.layers[0].children[1].children) {
+    for (let tile of canvas.layers[4].children[0].children) {
         tile.texture.baseTexture.setStyle(0,0);
         tile.texture.baseTexture.update();
     }
