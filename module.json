@@ -14,7 +14,7 @@
     "compatibility": {
         "minimum": "10",
         "verified": "11",
-        "maximum": "11"
+        "maximum": "12"
     },
     "compatibleCoreVersion": "11",
     "download": "https://github.com/Tronikart/proper-pixels/releases/latest/download/module.zip",
