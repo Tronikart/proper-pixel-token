@@ -23,4 +23,4 @@ Use this manifest url on the module manager window: https://github.com/Tronikart
 
 ### TODO
 
-* Add configuration to decide what the mod should affect (Tiles and/or Tokens)
+* Figure out how to do this for backgrounds as well
