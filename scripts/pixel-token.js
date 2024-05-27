@@ -37,7 +37,7 @@ Hooks.on("canvasReady", () => {
     }
     if (getAffectTiles()) {
         // there has to be an easier way to get tiles, right?
-        for (let tile of canvas.tiles.children[0].children) {
+        for (let tile of canvas.tiles.placeables) {
             tile.texture.baseTexture.setStyle(0,0);
             tile.texture.baseTexture.update();
         }
