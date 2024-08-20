@@ -3,7 +3,7 @@ export function getAffectTokens() { return game.settings.get('proper-pixels', 'a
 export function getIgnoreTag() { return game.settings.get('proper-pixels', 'tokenTag') };
 export function getShouldIgnorePreTaggerReady(token) {
     const tags = token.document?.flags?.tagger?.tags;
-    return game.modules.get('tagger')?.active && tags != null && tags?.find(t => t === getIgnoreTag() != null)
+    return game.modules.get('tagger')?.active && tags != null && (tags.find(t => t === getIgnoreTag()) != null)
 };
 
 
