@@ -20,7 +20,7 @@ Using [Tagger](https://github.com/fantasycalendar/FoundryVTT-Tagger) you can cre
 
 
 ![Example Blacklist Tag Settings 1](/readme-media/blacklist_1.gif)
-![xample Blacklist Tag Settings 2](/readme-media/blacklist_1.gif)
+![xample Blacklist Tag Settings 2](/readme-media/blacklist_2.gif)
 
 
 # Manual Instalation
