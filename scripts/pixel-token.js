@@ -32,14 +32,14 @@ Hooks.once('init', async function () {
         default: true
     });
     game.settings.register('proper-pixels', 'tokenTag', {
-            name: "Ignores Tokens with Tag",
-            hint: "(requires Tagger module) If a value is set, tokens with this tag will be ignored",
-            scope: "world",
-            type: String,
-            default: "ignore-pixel",
-            config: true,
-            requiresReload: true
-        });
+        name: "Ignores Tokens with Tag",
+        hint: "(requires Tagger module) If a value is set, tokens with this tag will be ignored",
+        scope: "world",
+        type: String,
+        default: "ignore-pixel",
+        config: true,
+        requiresReload: true
+    });
 
 });
 
