@@ -15,6 +15,14 @@ This one looks way better but gif compression is doing its thing
 
 The animated token is a webm file
 
+### Tagger Blacklist
+Using [Tagger](https://github.com/fantasycalendar/FoundryVTT-Tagger) you can create a tag that disables Proper Pixels from applying to that token. Simply ensure the tag name you apply to your token is the same as the one set in Proper Pixel's config.
+
+
+![Example Blacklist Tag Settings 1](/readme-media/blacklist_1.gif)
+![xample Blacklist Tag Settings 2](/readme-media/blacklist_2.gif)
+
+
 # Manual Instalation
 
 This mod can be installed as any regular mod through the mod manager
