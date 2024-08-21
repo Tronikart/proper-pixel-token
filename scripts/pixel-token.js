@@ -31,17 +31,15 @@ Hooks.once('init', async function () {
         requiresReload: true,
         default: true
     });
-    if (game.modules.get('tagger')?.active) {
-        game.settings.register('proper-pixels', 'tokenTag', {
+    game.settings.register('proper-pixels', 'tokenTag', {
             name: "Ignores Tokens with Tag",
-            hint: "If a value is set, tokens with this tag will not be transformed",
+            hint: "(requires Tagger module) If a value is set, tokens with this tag will be ignored",
             scope: "world",
             type: String,
-            default: "",
+            default: "ignore-pixel",
             config: true,
             requiresReload: true
         });
-    }
 
 });
 
