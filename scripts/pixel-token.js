@@ -69,7 +69,7 @@ Hooks.on("createToken", async (token) => {
     // if this await doesn't exist, texture will return undefined
     // if you know a less-hacky way to do this, please feel free to send a PR
     if (getAffectTokens()) {
-        if (Tagger != null && Tagger.hasTags(token, getIgnoreTag())) {
+        if (window.Tagger != null && Tagger.hasTags(token, getIgnoreTag())) {
             return;
         }
         await new Promise(resolve => setTimeout(resolve, 100));
@@ -81,7 +81,7 @@ Hooks.on("createToken", async (token) => {
 
 Hooks.on("preUpdateToken", (token) => {
     if (getAffectTokens()) {
-        if (Tagger != null && Tagger.hasTags(token, getIgnoreTag())) {
+        if (window.Tagger != null && Tagger.hasTags(token, getIgnoreTag())) {
             return;
         }
         const baseTexture = token.object.texture.baseTexture;
@@ -92,7 +92,7 @@ Hooks.on("preUpdateToken", (token) => {
 Hooks.on("createTile", async (tile) => {
     // you know the drill
     if (getAffectTiles()) {
-        if (Tagger != null && Tagger.hasTags(tile, getIgnoreTag())) {
+        if (window.Tagger != null && Tagger.hasTags(tile, getIgnoreTag())) {
             return;
         }
         await new Promise(resolve => setTimeout(resolve, 100));
@@ -104,7 +104,7 @@ Hooks.on("createTile", async (tile) => {
 
 Hooks.on("preUpdateTile", (tile) => {
     if (getAffectTiles()) {
-        if (Tagger != null && Tagger.hasTags(tile, getIgnoreTag())) {
+        if (window.Tagger != null && Tagger.hasTags(tile, getIgnoreTag())) {
             return;
         }
         const baseTexture = tile.object.texture.baseTexture;
