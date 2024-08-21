@@ -27,7 +27,7 @@ Using [Tagger](https://github.com/fantasycalendar/FoundryVTT-Tagger) you can cre
 
 This mod can be installed as any regular mod through the mod manager
 
-Use this manifest url on the module manager window: https://github.com/Tronikart/proper-pixels/releases/tag/v1.3
+Use this manifest url on the module manager window: https://github.com/Tronikart/proper-pixels/releases/latest/download/module.json
 
 ### TODO
 
