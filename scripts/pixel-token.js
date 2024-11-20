@@ -1,5 +1,6 @@
 export function getAffectTiles() { return game.settings.get('proper-pixels', 'affectTiles') };
 export function getAffectTokens() { return game.settings.get('proper-pixels', 'affectTokens') };
+export function getAffectCharacterSheets() { return game.settings.get('proper-pixels', 'affectCharacterSheets') };
 export function getIgnoreTag() { return game.settings.get('proper-pixels', 'tokenTag') };
 export function getShouldIgnorePreTaggerReady(token) {
     const tags = token.document?.flags?.tagger?.tags;
@@ -31,6 +32,18 @@ Hooks.once('init', async function () {
         requiresReload: true,
         default: true
     });
+
+    game.settings.register('proper-pixels', 'affectCharacterSheets', {
+        name: "Affects Character Sheet",
+        hint: "If this is toggled, Character Sheets and side menu Thumbnails will be affected by this module",
+        scope: "world",
+        type: Boolean,
+        default: 1,
+        config: true,
+        requiresReload: true,
+        default: true
+    });
+
     game.settings.register('proper-pixels', 'tokenTag', {
         name: "Ignores Tokens with Tag",
         hint: "(requires Tagger module) If a value is set, tokens with this tag will be ignored",
@@ -109,5 +122,21 @@ Hooks.on("preUpdateTile", (tile) => {
         }
         const baseTexture = tile.object.texture.baseTexture;
         baseTexture.setStyle(0, 0);
+    }
+})
+
+Hooks.on("renderActorSheet", () => {
+    if (getAffectCharacterSheets()) {
+        var list = document.getElementsByClassName("portrait")
+        for (let item of list)
+            item.style.imageRendering = "pixelated"
+    }
+})
+
+Hooks.on("changeSidebarTab", () => {
+    if (getAffectCharacterSheets()) {
+        var list = document.getElementsByClassName("thumbnail")
+        for (let item of list)
+            item.style.imageRendering = "pixelated"
     }
 })
