@@ -133,7 +133,7 @@ Hooks.on("renderActorSheet", () => {
     }
 })
 
-Hooks.on("changeSidebarTab", () => {
+Hooks.on("renderSidebarTab", () => {
     if (getAffectCharacterSheets()) {
         var list = document.getElementsByClassName("thumbnail")
         for (let item of list)
