@@ -7,7 +7,7 @@
             "name": "wickedRobot#2069"
         }
     ],
-    "version": "1.3.0",
+    "version": "1.4.0",
     "esmodules": [
         "scripts/pixel-token.js"
     ],
